@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <title>404</title>
     <script>
-      const ROOT = 'https://lzedith.com';
-      const MAP = {
-        '/~1': '/matrix-1h.html',
-      };
       function onload() {
-        const id = window.location.pathname;
-        window.location.href = ROOT + (MAP[id] ?? '');
+        window.location.href = 'https://lzedith.com' + window.location.pathname + window.location.search;
       }
       setTimeout(onload, 1);
     </script>
